@@ -14,6 +14,7 @@ ID = "5cc96309f2aa9f74f457a20fcd7f913a"
 SECRET = "03586fb7cc982521269ac6785abc9d2f66a0a6d94a1bfcbf94681001206737c35ed0959b25b7ba43c3ddb726681e0785f89988dc30ab92265ba8d7d2e6b5b97f"
 
 
+
 class VeracodIntegration(CodeScanner):
     def __init__(self, pluginconfig):
         super().__init__(pluginconfig)
