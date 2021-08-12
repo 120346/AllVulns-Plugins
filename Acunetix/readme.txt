@@ -1,6 +1,8 @@
 <H1>Acunetix Plugin for Acunetix Enterprise Edition</H1>
 <br>
 <H2>Required configuration fields:</H2><br>
+- <b>host</b>
+- <b>port</b>
 - <b>apiKey</b> The Acunetix API Key genenerated in the Acunetix Enterprise Edition<br>
 - <b>scanProfileId</b> The Scan Profile ID Available in the Acunetix configuration<br>
 - <b>reportTemplateId</b> The Report Template ID Available in the Acunetix configuration<br><br>
