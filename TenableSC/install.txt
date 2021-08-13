@@ -1,0 +1,2 @@
+plugintype scanners/infrastructure
+dependencies pyTenable==0.3.26
