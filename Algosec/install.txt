@@ -1,2 +1,4 @@
-plugintype networkUtils
-dependencies algosec==1.3.5
+{
+   "plugintype":"networkUtils",
+   "dependencies""algosec==1.3.5"
+}
