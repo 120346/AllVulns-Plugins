@@ -1,0 +1,2 @@
+plugintype networkUtils
+dependencies algosec==1.3.5
