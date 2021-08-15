@@ -1,0 +1,1 @@
+{"plugin_type":"scanners/code","dependencies":"veracode-api-signing==19.9.0"}
