@@ -1,2 +1,1 @@
-plugintype scanners/infrastructure
-dependencies pyTenable==0.3.26
+{"plugin_type":"scanners/infrastructure","dependencies":"pyTenable==0.3.26"}
