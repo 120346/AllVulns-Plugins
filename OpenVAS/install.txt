@@ -1,1 +1,1 @@
-{"plugin_type":"scanners/web","dependencies":""}
+{"plugin_type":"scanners/infrastructure","dependencies":"openvas-lib==1.1.8"}
