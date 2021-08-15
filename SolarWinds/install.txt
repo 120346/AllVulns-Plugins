@@ -1,1 +1,1 @@
-{"plugin_type":"networkUtils","dependencies":""}
+{"plugin_type":"networkUtils","dependencies":"orionsdk==0.1.0"}
