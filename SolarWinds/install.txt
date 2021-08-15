@@ -1,1 +1,1 @@
-changeManagement
+{"plugin_type":"networkUtils","dependencies":""}
