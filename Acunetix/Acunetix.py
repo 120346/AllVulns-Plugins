@@ -43,12 +43,24 @@ class Scanner(BaseWebScanner):
     def scan(self, appName, scanDate, pentest, nmapInfo=None, hostString=None):
         if self.connection:
             for ip in nmapInfo:
-                for port in nmapInfo[ip]:
+                for entry in nmapInfo[ip]:
+                    if entry == 'reverseDNS':
+                        url = nmapInfo[ip]['reverseDNS']
+                    else:
+                        port = entry
+                        url = nmapInfo[ip][port]['url']
                     url = nmapInfo[ip][port]['url']
                     if url != '':
-                        targetId = self.getTargetId(url, appName)
-                        self.scanTarget(targetId, scanDate)
-                        self.addTargetToPentest(targetId, pentest)
+                        if isinstance(url, list):
+                            for uri_entry in url:
+                                targetId = self.getTargetId(uri_entry.domain, appName)
+                                self.scanTarget(targetId, scanDate)
+                                self.addTargetToPentest(targetId, pentest)
+
+                        else:
+                            targetId = self.getTargetId(url, appName)
+                            self.scanTarget(targetId, scanDate)
+                            self.addTargetToPentest(targetId, pentest)
 
     def getVulnerabilities(self, targetId, pentest):
         if self.connection:
